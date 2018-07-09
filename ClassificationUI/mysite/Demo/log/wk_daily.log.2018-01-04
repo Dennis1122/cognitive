@@ -1,0 +1,98 @@
+2018-01-04 16:06:44,101 - Rotating Log - INFO - -Not able to download file from s3-global name 'boto3' is not definedhome/531525148_FC_NC.pdf
+2018-01-04 16:06:44,102 - Rotating Log - INFO - --error while processing pool--global name 'mdb' is not defined1
+2018-01-04 16:06:44,102 - Rotating Log - INFO - Exception--inserted null values for esop--1--
+2018-01-04 16:09:01,046 - Rotating Log - INFO - --error while processing pool--global name 'fname' is not defined1
+2018-01-04 16:09:01,047 - Rotating Log - INFO - Exception--inserted null values for esop--1--home/531525148_FC_NC.pdf
+2018-01-04 16:09:51,214 - Rotating Log - INFO - Downloading PDF for esop1for PDF
+2018-01-04 16:09:51,214 - Rotating Log - INFO - --error while processing pool--[Errno 2] No such file or directory: 'home/531525148_FC_NC.pdf'1
+2018-01-04 16:09:51,214 - Rotating Log - INFO - Exception--inserted null values for esop--1--home/531525148_FC_NC.pdf
+2018-01-04 16:10:51,975 - Rotating Log - INFO - Downloading PDF for esop1for PDF
+2018-01-04 16:10:58,376 - Rotating Log - INFO - starting OCR PDF extraction for esop--1
+2018-01-04 16:10:58,559 - Rotating Log - INFO - starting attachment prediction for esop 1
+2018-01-04 16:10:58,560 - Rotating Log - INFO - starting jurisdiction prediction for esop 1
+2018-01-04 16:10:58,562 - Rotating Log - INFO - starting lawsuit prediction for esop 1
+2018-01-04 16:10:58,574 - Rotating Log - INFO - starting case number prediction 1
+2018-01-04 16:10:58,776 - Rotating Log - INFO - sent result from attachment 1
+2018-01-04 16:10:59,193 - Rotating Log - INFO - sent result from lawsuit 1
+2018-01-04 16:10:59,693 - Rotating Log - INFO - sent result from jurisdiction(case 3) 1
+2018-01-04 16:11:00,247 - Rotating Log - INFO - sent result from casenumber 1
+2018-01-04 16:11:00,292 - Rotating Log - INFO - started from pltfdftd 1
+2018-01-04 16:11:02,133 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 16:11:03,722 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 16:11:04,020 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 16:11:04,736 - Rotating Log - INFO - sent result from pltfdftd 1
+2018-01-04 17:19:27,719 - Rotating Log - INFO - Downloading PDF for esop1for PDF
+2018-01-04 17:19:35,767 - Rotating Log - INFO - starting OCR PDF extraction for esop--1
+2018-01-04 17:19:36,012 - Rotating Log - INFO - starting attachment prediction for esop 1
+2018-01-04 17:19:36,013 - Rotating Log - INFO - starting jurisdiction prediction for esop 1
+2018-01-04 17:19:36,014 - Rotating Log - INFO - starting lawsuit prediction for esop 1
+2018-01-04 17:19:36,023 - Rotating Log - INFO - starting case number prediction 1
+2018-01-04 17:19:38,496 - Rotating Log - INFO - sent result from attachment 1
+2018-01-04 17:19:43,022 - Rotating Log - INFO - sent result from lawsuit 1
+2018-01-04 17:19:43,281 - Rotating Log - INFO - sent result from casenumber 1
+2018-01-04 17:19:43,479 - Rotating Log - INFO - sent result from jurisdiction(case 3) 1
+2018-01-04 17:19:46,424 - Rotating Log - INFO - started from pltfdftd 1
+2018-01-04 17:19:50,946 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 17:19:52,625 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 17:19:52,964 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 17:19:55,461 - Rotating Log - INFO - sent result from pltfdftd 1
+2018-01-04 17:22:54,893 - Rotating Log - INFO - Downloading PDF for esop1for PDF
+2018-01-04 17:23:02,783 - Rotating Log - INFO - starting OCR PDF extraction for esop--1
+2018-01-04 17:23:02,945 - Rotating Log - INFO - starting attachment prediction for esop 1
+2018-01-04 17:23:02,945 - Rotating Log - INFO - starting jurisdiction prediction for esop 1
+2018-01-04 17:23:02,945 - Rotating Log - INFO - starting lawsuit prediction for esop 1
+2018-01-04 17:23:02,982 - Rotating Log - INFO - starting case number prediction 1
+2018-01-04 17:23:03,128 - Rotating Log - INFO - sent result from attachment 1
+2018-01-04 17:23:04,709 - Rotating Log - INFO - sent result from lawsuit 1
+2018-01-04 17:23:05,596 - Rotating Log - INFO - sent result from casenumber 1
+2018-01-04 17:23:06,996 - Rotating Log - INFO - sent result from jurisdiction(case 3) 1
+2018-01-04 17:23:07,353 - Rotating Log - INFO - started from pltfdftd 1
+2018-01-04 17:23:10,390 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 17:23:12,053 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 17:23:12,386 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 17:23:13,290 - Rotating Log - INFO - sent result from pltfdftd 1
+2018-01-04 17:25:48,466 - Rotating Log - INFO - Downloading PDF for esop1for PDF
+2018-01-04 17:25:56,371 - Rotating Log - INFO - starting OCR PDF extraction for esop--1
+2018-01-04 17:25:56,549 - Rotating Log - INFO - starting attachment prediction for esop 1
+2018-01-04 17:25:56,550 - Rotating Log - INFO - starting jurisdiction prediction for esop 1
+2018-01-04 17:25:56,551 - Rotating Log - INFO - starting lawsuit prediction for esop 1
+2018-01-04 17:25:56,559 - Rotating Log - INFO - starting case number prediction 1
+2018-01-04 17:25:56,767 - Rotating Log - INFO - sent result from attachment 1
+2018-01-04 17:25:57,473 - Rotating Log - INFO - sent result from lawsuit 1
+2018-01-04 17:26:02,183 - Rotating Log - INFO - sent result from jurisdiction(case 3) 1
+2018-01-04 17:26:02,369 - Rotating Log - INFO - sent result from casenumber 1
+2018-01-04 17:26:06,596 - Rotating Log - INFO - started from pltfdftd 1
+2018-01-04 17:26:14,290 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 17:26:15,954 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 17:26:16,290 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 17:26:18,611 - Rotating Log - INFO - sent result from pltfdftd 1
+2018-01-04 17:30:50,935 - Rotating Log - INFO - Downloading PDF for esop1for PDF
+2018-01-04 17:30:58,968 - Rotating Log - INFO - starting OCR PDF extraction for esop--1
+2018-01-04 17:30:59,172 - Rotating Log - INFO - starting attachment prediction for esop 1
+2018-01-04 17:30:59,173 - Rotating Log - INFO - starting jurisdiction prediction for esop 1
+2018-01-04 17:30:59,173 - Rotating Log - INFO - starting lawsuit prediction for esop 1
+2018-01-04 17:30:59,187 - Rotating Log - INFO - starting case number prediction 1
+2018-01-04 17:30:59,392 - Rotating Log - INFO - sent result from attachment 1
+2018-01-04 17:31:00,718 - Rotating Log - INFO - sent result from lawsuit 1
+2018-01-04 17:31:01,348 - Rotating Log - INFO - sent result from casenumber 1
+2018-01-04 17:31:02,246 - Rotating Log - INFO - sent result from jurisdiction(case 3) 1
+2018-01-04 17:31:02,763 - Rotating Log - INFO - started from pltfdftd 1
+2018-01-04 17:31:06,716 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 17:31:08,382 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 17:31:08,714 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 17:31:09,614 - Rotating Log - INFO - sent result from pltfdftd 1
+2018-01-04 17:34:28,598 - Rotating Log - INFO - Downloading PDF for esop1for PDF
+2018-01-04 17:34:36,355 - Rotating Log - INFO - starting OCR PDF extraction for esop--1
+2018-01-04 17:34:36,513 - Rotating Log - INFO - starting attachment prediction for esop 1
+2018-01-04 17:34:36,513 - Rotating Log - INFO - starting lawsuit prediction for esop 1
+2018-01-04 17:34:36,513 - Rotating Log - INFO - starting jurisdiction prediction for esop 1
+2018-01-04 17:34:36,524 - Rotating Log - INFO - starting case number prediction 1
+2018-01-04 17:34:36,723 - Rotating Log - INFO - sent result from attachment 1
+2018-01-04 17:34:40,039 - Rotating Log - INFO - sent result from lawsuit 1
+2018-01-04 17:34:41,326 - Rotating Log - INFO - sent result from casenumber 1
+2018-01-04 17:34:41,331 - Rotating Log - INFO - sent result from jurisdiction(case 3) 1
+2018-01-04 17:34:45,879 - Rotating Log - INFO - started from pltfdftd 1
+2018-01-04 17:34:48,933 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 17:34:50,583 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 17:34:50,913 - Rotating Log - INFO - before final_defendant == None1
+2018-01-04 17:34:52,265 - Rotating Log - INFO - sent result from pltfdftd 1

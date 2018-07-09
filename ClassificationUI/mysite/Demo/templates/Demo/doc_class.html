@@ -1,0 +1,407 @@
+<!doctype html>
+<html><head>
+    <meta charset="utf-8">
+    <title>ML Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    {% load static %}
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="{% static '/Demo/bootstrap/css/bootstrap.min.css' %}" />
+    <link href="{% static '/Demo/css/table.css' %}" rel="stylesheet">
+    <link href="{% static '/Demo/css/main.css' %}" rel="stylesheet">
+    <link href="{% static '/Demo/css/font-style.css' %}" rel="stylesheet">
+    <link href="{% static '/Demo/css/register.css' %}" rel="stylesheet">
+
+
+	<script type="text/javascript" src="{% static '/Demo/js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static '/Demo/bootstrap/js/bootstrap.min.js' %}"></script>
+     <script type="text/javascript" src="{% static '/Demo/js/admin.js' %}"></script>
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+      #progressbar-outer {
+    height:2em;
+    border:5px solid #000;
+    width:15em;
+}
+#progressbar {
+    width:0%;
+    background-color:#F00;
+    height:100%;
+}
+.scrollit { height:530px; overflow-y:scroll; }
+table tr.odd { background-color: #322e2e; }
+table tr.even { background-color: #8e7f7f; }
+table td {padding: 8px 10px;border-right: 1px solid #ccc;border-left:  1px solid;}
+table tbody tr:hover { background-color: #4d4747; }
+table tbody tr:hover { color: #2dab42; }
+.display { width: 100%; }
+table.display thead th {
+	border-bottom: 1px solid #ccc;
+}
+#register-info {
+  position: relative;
+  margin-top: 0px;
+  padding: 0px;
+  padding-top: 0px;
+}
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  	<!-- Google Fonts call. Font Used Open Sans & Raleway -->
+	<link href="http://fonts.googleapis.com/css?family=Raleway:400,300" rel="stylesheet" type="text/css">
+  	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+
+	</head>
+  <body>
+
+  	<!-- NAVIGATION MENU -->
+
+    <div class="navbar-nav navbar-inverse navbar-fixed-top">
+        <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/Demo/Home/">Cognitive Computing Suite</a>
+        </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+                <li><a href="/Demo/Demo_page_load_cls/"><i class="icon-home icon-white"></i>Doc Classification</a></li>
+
+
+
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+
+
+
+<div class="col-lg-12">
+<div class="col-lg-12" style="
+    width: 1155px;
+    padding-left: 0px;
+">
+  <form action="/Demo/predict_file/" method="POST" enctype="multipart/form-data">
+     {% csrf_token %}
+            <div class="register-info-wraper">
+
+              <div id="register-info">
+
+                <div class="cont2" style=" width: 1138px;">
+                  <h2>Upload file (*.pdf)</h2><hr>
+                  <div class="thumbnail">
+              </div><!-- /thumbnail -->
+
+                </div>
+                <div class="row">
+
+                  <div class="col-lg-7" style="margin-left: 0px;border-left-width: 100px;left: 327px;">
+                    <div class="cont3" >
+ <input type="file" id="file" class="btnnew" name="myfile" />
+                    </div>
+                  </div>
+                  <div class="col-lg-1">
+                    <div class="cont3">
+<button type="submit" onclick = "show();" id="upbtn" class="btn btn-success">Upload</button>
+                    </div>
+                  </div>
+                  <div class="col-lg-1">
+                    <div class="cont3">
+<a onclick = "process();" class="btn btn-success">Redact</a>
+                    </div>
+                  </div>
+
+
+                </div><!-- /inner row -->
+
+
+            <br>
+
+
+
+              </div>
+            </div>
+</form>
+          </div>
+</div>
+
+
+
+            <div class="col-lg-12">
+
+            <div class="register-info-wraper">
+               <hr>
+              <div id="register-info">
+
+
+ <div class="row" style="
+    padding-left: 15px;
+    padding-right: 15px;
+">
+
+   <!-- DOCUMENT DIV -->
+             <div id="documentDiv" style="display:none"class="col-sm-6 col-lg-6" class="register-info-wraper">
+
+               <div id="register-wraper" style="margin-bottom: 0px;">
+                 <h4>Document</h4>
+                 <div id = "myDiv" style="display:none;">
+           <img style="position:absolute;
+       left:31%;
+       top:25%;" style=""  width="220" height="220" src="{% static '/Demo/images/loading.gif' %}" alt="loading"/> </div>
+       <!--<div id = "myDiv" style="display:none;">My text</div>-->
+
+                       <object id='pdfDiv' data="{% static '/Demo/pdfs/' %}{{ pdf }}" type="application/pdf" width="100%" height="470px">
+                         <!-- <img id="canvas" src="{% static '/Demo/pdfs/orginal/W-8IMY-page-001.jpg' %}" width="100%" height="100%" onclick="showCoords(event)"/> -->
+                       </object>
+
+               </div>
+             </div>
+
+
+                  <div class="col-lg-6" id="redactedDiv" style="display:none">
+
+                    <div id="register-wraper" style="margin-bottom: 0px;">
+                      <h4>Redacted PDF</h4>
+                      <div id="nobDiv">
+                <img id="loadingDiv" style="position:absolute;left:31%;top:25%;"width="220" height="220" src="{% static '/Demo/images/loading.gif' %}" alt="loading"/> </div>
+            <!--<div id = "myDiv" style="display:none;">My text</div>-->
+     
+                            <object id='pdfDiv' data="{% static '/Demo/pdfs/' %}{{ out_pdf }}" type="application/pdf" width="100%" height="470px">
+                              <!-- <img id="canvas" src="{% static '/Demo/pdfs/orginal/W-8IMY-page-001.jpg' %}" width="100%" height="100%" onclick="showCoords(event)"/> -->
+                            </object>
+     
+                    </div>
+
+                  </div>
+
+</div>
+
+<br>
+
+<!-- <div class="row">
+<div class="col-lg-6" style="">
+                <div class="row" id="bodDiv" style="display:none;">
+                  <div class="col-lg-12">
+                     <h2>Jurisdiction</h2>
+                    <div class="cont3">
+                      <hr>
+                      <!-- <h4>Page Numbers</h4> -->
+                      {% for eachname in jurisdiction %}
+                            <ok>{{ eachname }}</ok>
+                      {% endfor %}
+                      <!-- <h4>Names</h4>
+                      {% for eachname in bod %}
+                            <ok>{{ eachname }}</ok> ,
+                      {% endfor %} -->
+
+
+
+                    </div>
+                  </div>
+
+                </div>
+</div>
+
+<div class="col-lg-6" style="">
+                <div class="row" id="shDiv" style="display:none;">
+                  <div class="col-lg-6">
+                     <h2>Governing Law</h2>
+                    <div class="cont3">
+                      <hr>
+                      <!-- <h4>Page Numbers</h4> -->
+                      {% for eachname in governingLaw %}
+                            <ok>{{ eachname }}</ok>
+                      {% endfor %}
+                      <!-- <h4>Names</h4>
+                      {% for eachname in bod %}
+                            <ok>{{ eachname }}</ok> ,
+                      {% endfor %} -->
+
+
+
+                    </div>
+                  </div>
+
+                </div>
+</div><!-- /inner row -->
+
+</div> -->
+
+
+            <div class="cont2">
+
+            </div>
+            <br>
+
+
+
+              </div>
+            </div>
+
+          </div>
+
+
+
+            	<div id="footerwrap">
+                  	<footer class="clearfix"></footer>
+                  	<div class="container">
+                  		<div class="row">
+                  			<div class="col-sm-12 col-lg-12">
+                          <div class="info-user2" style="padding-bottom: 0px;">
+                                          <span aria-hidden="true" class="li_user fs1"></span>
+                                          <span aria-hidden="true" class="li_settings fs1"></span>
+                                          <span aria-hidden="true" class="li_mail fs1"></span>
+                                          <span aria-hidden="true" class="li_key fs1"></span>
+                                          <span aria-hidden="true" class="li_lock fs1"></span>
+                                          <span aria-hidden="true" class="li_pen fs1"></span>
+                                        </div>
+                  			<p><img width="150" height="130" src="{% static '/Demo/images/Robotics_Logo.png' %}" alt="loading" /></p>
+                  			<p></p>
+                  			</div>
+
+                  		</div><!-- /row -->
+                  	</div><!-- /container -->
+            	</div><!-- /footerwrap -->
+            </body>
+<script type="text/javascript">
+
+$( document ).ready(function() {
+  if("{{pdf}}"){
+    document.getElementById('documentDiv').style.display = 'block';
+  }
+  if("{{predit1}}"&&"{{predit2}}"&&"{{predit3}}"){
+    document.getElementById('bodDiv').style.display = 'block';
+    document.getElementById('shDiv').style.display = 'block';
+  }
+  else if("{{predit1}}"&&"{{predit2}}"){
+    //alert('BOD');
+    document.getElementById('nobDiv').style.display = 'block';
+    document.getElementById('bodDiv').style.display = 'block';
+    document.getElementById('pdfDiv').data = "{% static '/Demo/pdfs/' %}{{ pdf }}"
+    //window.location = "/Demo/predict_file3/";
+  }
+  else if("{{predit1}}"){
+    //alert("{{nob_dict|safe}}");
+    document.getElementById('nobDiv').style.display = 'block';
+    document.getElementById('pdfDiv').data = "{% static '/Demo/pdfs/' %}{{ pdf }}"
+    document.getElementById('redactedDiv').style.display = 'block';
+    document.getElementById('loadingDiv').style.display = 'none';
+    //window.location = "/Demo/predict_file2/";
+    
+  }
+  $("#ajaxbtn").click(function() {
+    setInterval(function () {
+    console.log('ajax request--->>');
+    $.ajax({
+        url: "/Demo/ajax_test/",
+        type: "POST",
+        dataType: "json",
+        data: {
+            // cords: cords,
+            // attributes: attr,
+            values: 'some val',
+            csrfmiddlewaretoken: '{{ csrf_token }}'
+            },
+            success: function(result){
+                alert("success-->>"+(JSON.parse(result.toString())));
+              },
+        error : function(result,xhr,errmsg,err) {
+            //alert("Data sucessfully send and processed" + xhr.status + ": " + errmsg);
+            alert("failed-->>"+errmsg);
+        }
+    });
+    },6000);
+})
+
+});
+
+
+function show(){
+
+
+    var filename = document.getElementById("file");
+    if(filename.value.trim()== "")
+    {
+      return false;
+    }
+
+    myDiv.style.display = "block";
+    //loading();
+    //document.getElementById('myDiv').innerHTML = "Reading the document. . . ";
+
+  };
+
+function process(){
+  window.location = "/Demo/predict_file1/";
+}
+
+function loading()
+{
+  // alert({{page_no|safe}});
+  // alert({{board_members}});
+
+  //console.log('Loading');
+  document.getElementById('loading').style.display = "block";
+  document.getElementById('loading').innerHTML = "Reading the document. . . ";
+//   window.setInterval(function(
+//      document.getElementById('loading').innerHTML = "Page Classification. . . ";)
+// ,1000);
+var myVar = setInterval(myTimer, 3000);
+function myTimer() {
+    document.getElementById("loading").innerHTML = "Page Classification. . . ";
+}
+
+var myVar = setInterval(myTimer1, 4000);
+function myTimer1() {
+    document.getElementById("loading").innerHTML = "Page Identified. . . ";
+}
+
+var myVar = setInterval(myTimer2, 5000);
+function myTimer2() {
+  //alert("hi2");
+    document.getElementById("loading").innerHTML = "Attribute Identification. . . ";
+}
+
+var myVar = setInterval(myTimer3, 6000);
+function myTimer3() {
+
+    document.getElementById("loading").innerHTML = "Filtering. . . ";
+}
+
+var myVar = setInterval(myTimer4, 7000);
+function myTimer4() {
+
+    document.getElementById("loading").innerHTML = "Completed!!";
+    document.getElementById('loading').style.display = "none";
+
+    document.getElementById('pgNbr').style.display = "block";
+    document.getElementById('directors').style.display = "block";
+}
+var myVar = setInterval(myTimer5, 7500);
+function myTimer5() {
+
+
+    document.getElementById('pgNbr').style.display = "block";
+    document.getElementById('directors').style.display = "block";
+    document.getElementById('loading').style.display = "none";
+}
+
+};
+</script>
+</html>

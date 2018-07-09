@@ -1,0 +1,27 @@
+nob_area = [('14 FEBRUARY 2018 Announcement of financial', ['cement'])]
+page_bod=['25', '26', '27', '35']
+bod=['Simon Jones', 'Stuart Irving', 'Chris Morris', 'Christopher John Morris', 
+     'Penny Maclagan', 'Penelope Jane Maclagan', 'Les Owen', 'Arthur Leslie Les Owen',
+     'General     Federation', 'Markus Kerber', 'Joseph Mark Velli', 'Joseph Velli', 
+     'Stuart James Irving', 'Joseph Mark Velli', 'Arthur Leslie Owen', 
+     'Penelope Jane Maclagan', 'Markus Erhard Kerber', 'Christopher John Morris', 
+     'Simon David Jones']
+page_sh={112}
+sh=[('UBS Nominees Pty Ltd', ['Number of Shares: 1092500', 'Percentage: 0.20%']), 
+    ('National Nominees Limited <N A/C>', ['Number of Shares: 1155000', 'Percentage: 0.21%']), 
+    ('HSBC Custody Nominees (Australia) Limited <Nt-Comnwlth Super Corp A/C>', ['Number of Shares: 1829440', 'Percentage: 0.34%']), 
+    ('Ms Michele Jean O’Halloran', ['Number of Shares: 4403218', 'Percentage: 0.81%']),
+    ('Australian Foundation Investment Company Limited', ['Number of Shares: 4660000', 'Percentage: 0.85%']), 
+    ('Argo Investments Limited', ['Number of Shares: 4901166', 'Percentage: 0.90%']),
+    ('Computershare Clearing Pty Ltd', ['Number of Shares: 6079619', 'Percentage: 1.11%']), 
+    ('BNP Paribas Noms Pty Ltd <DRP>', ['Number of Shares: 8730485', 'Percentage: 1.60%']), 
+    ('HSBC Custody Nominees (Australia) Limited <Euroclear Bank SA NV A/C>', ['Number of Shares: 10052929', 'Percentage: 1.84%']), 
+    ('Citicorp Nominees Pty Limited <Colonial First State Inv. A/C>', ['Number of Shares: 10487895', 'Percentage: 1.92%']), 
+    ('Penelope Maclagan', ['Number of Shares: 11543868', 'Percentage: 2.11%']),
+    ('BNP Paribas Nominees Pty Ltd <Agency Lending DRP A/C>', ['Number of Shares: 12839989', 'Percentage: 2.35%']), 
+    ('Welas Pty Ltd', ['Number of Shares: 21450000', 'Percentage: 3.93%']), ('National Nominees Limited', ['Number of Shares: 29832901', 'Percentage: 5.46%']),
+    ('Mr Chris Morris', ['Number of Shares: 35131000', 'Percentage: 6.43%']), 
+    ('Citicorp Nominees Pty Limited', ['Number of Shares: 36138818', 'Percentage: 6.62%']), 
+    ('Christopher John Morris', ['Number of Shares: 35131000', 'Percentage: 6.43%'])]
+none_list=[]
+success=10

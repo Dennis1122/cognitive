@@ -1,0 +1,100 @@
+2018-01-05 10:14:42,582 - Rotating Log - INFO - Downloading PDF for esop1for PDF
+2018-01-05 10:14:46,497 - Rotating Log - INFO - starting OCR PDF extraction for esop--1
+2018-01-05 10:14:46,784 - Rotating Log - INFO - starting attachment prediction for esop 1
+2018-01-05 10:14:46,788 - Rotating Log - INFO - starting jurisdiction prediction for esop 1
+2018-01-05 10:14:46,790 - Rotating Log - INFO - starting lawsuit prediction for esop 1
+2018-01-05 10:14:46,791 - Rotating Log - INFO - starting case number prediction 1
+2018-01-05 10:14:48,466 - Rotating Log - INFO - sent result from lawsuit 1
+2018-01-05 10:14:48,484 - Rotating Log - INFO - sent result from attachment 1
+2018-01-05 10:14:48,962 - Rotating Log - INFO - sent result from jurisdiction(case 2)1
+2018-01-05 10:14:49,369 - Rotating Log - INFO - sent result from casenumber 1
+2018-01-05 10:14:49,603 - Rotating Log - INFO - started from pltfdftd 1
+2018-01-05 10:14:54,229 - Rotating Log - INFO - before final_defendant == None1
+2018-01-05 10:14:55,500 - Rotating Log - INFO - before final_defendant == None1
+2018-01-05 10:14:55,840 - Rotating Log - INFO - before final_defendant == None1
+2018-01-05 10:14:57,108 - Rotating Log - INFO - sent result from pltfdftd 1
+2018-01-05 12:10:36,977 - Rotating Log - INFO - Downloading PDF for esop1for PDF
+2018-01-05 12:10:41,465 - Rotating Log - INFO - starting OCR PDF extraction for esop--1
+2018-01-05 12:10:41,750 - Rotating Log - INFO - starting attachment prediction for esop 1
+2018-01-05 12:10:41,751 - Rotating Log - INFO - starting lawsuit prediction for esop 1
+2018-01-05 12:10:41,752 - Rotating Log - INFO - starting jurisdiction prediction for esop 1
+2018-01-05 12:10:41,758 - Rotating Log - INFO - starting case number prediction 1
+2018-01-05 12:10:41,882 - Rotating Log - INFO - sent result from attachment 1
+2018-01-05 12:10:42,309 - Rotating Log - INFO - sent result from lawsuit 1
+2018-01-05 12:10:42,787 - Rotating Log - INFO - sent result from jurisdiction(case 3) 1
+2018-01-05 12:10:44,077 - Rotating Log - INFO - sent result from casenumber 1
+2018-01-05 12:10:44,215 - Rotating Log - INFO - started from pltfdftd 1
+2018-01-05 12:10:44,224 - Rotating Log - INFO - exception from pltfdftd [Errno 2] No such file or directory: '/home/983869/Workspace1/DjangoWK/mysite/Demo/Models/county_list.txt'1
+2018-01-05 12:10:44,225 - Rotating Log - INFO - --error while processing pool--global name 'mdb' is not defined1
+2018-01-05 12:10:44,225 - Rotating Log - INFO - Exception--inserted null values for esop--1--/home/983869/Workspace1/DjangoWK/mysite/Demo/media/00AD4DEA956A43D198A5E0206985CE51.pdf
+2018-01-05 12:10:54,711 - Rotating Log - INFO - Downloading PDF for esop1for PDF
+2018-01-05 12:10:58,441 - Rotating Log - INFO - starting OCR PDF extraction for esop--1
+2018-01-05 12:10:58,571 - Rotating Log - INFO - starting attachment prediction for esop 1
+2018-01-05 12:10:58,572 - Rotating Log - INFO - starting jurisdiction prediction for esop 1
+2018-01-05 12:10:58,572 - Rotating Log - INFO - starting lawsuit prediction for esop 1
+2018-01-05 12:10:58,579 - Rotating Log - INFO - starting case number prediction 1
+2018-01-05 12:10:58,699 - Rotating Log - INFO - sent result from attachment 1
+2018-01-05 12:10:58,813 - Rotating Log - INFO - sent result from jurisdiction(case 2)1
+2018-01-05 12:10:59,128 - Rotating Log - INFO - sent result from lawsuit 1
+2018-01-05 12:11:00,294 - Rotating Log - INFO - sent result from casenumber 1
+2018-01-05 12:11:00,419 - Rotating Log - INFO - started from pltfdftd 1
+2018-01-05 12:11:00,420 - Rotating Log - INFO - exception from pltfdftd [Errno 2] No such file or directory: '/home/983869/Workspace1/DjangoWK/mysite/Demo/Models/county_list.txt'1
+2018-01-05 12:11:00,420 - Rotating Log - INFO - --error while processing pool--global name 'mdb' is not defined1
+2018-01-05 12:11:00,420 - Rotating Log - INFO - Exception--inserted null values for esop--1--/home/983869/Workspace1/DjangoWK/mysite/Demo/media/00AF685E0CE443DCA136174360C824DF_1sgeK0J.pdf
+2018-01-05 12:15:07,195 - Rotating Log - INFO - Downloading PDF for esop1for PDF
+2018-01-05 12:15:10,939 - Rotating Log - INFO - starting OCR PDF extraction for esop--1
+2018-01-05 12:15:11,095 - Rotating Log - INFO - starting attachment prediction for esop 1
+2018-01-05 12:15:11,096 - Rotating Log - INFO - starting jurisdiction prediction for esop 1
+2018-01-05 12:15:11,100 - Rotating Log - INFO - starting case number prediction 1
+2018-01-05 12:15:11,096 - Rotating Log - INFO - starting lawsuit prediction for esop 1
+2018-01-05 12:15:11,567 - Rotating Log - INFO - sent result from attachment 1
+2018-01-05 12:15:11,746 - Rotating Log - INFO - sent result from jurisdiction(case 2)1
+2018-01-05 12:15:12,029 - Rotating Log - INFO - sent result from lawsuit 1
+2018-01-05 12:15:12,823 - Rotating Log - INFO - sent result from casenumber 1
+2018-01-05 12:15:12,959 - Rotating Log - INFO - started from pltfdftd 1
+2018-01-05 12:15:13,149 - Rotating Log - INFO - exception from pltfdftd [Errno 2] No such file or directory: '/home/983869/Workspace1/DjangoWK/mysite/Demo/Models/county_list.txt'1
+2018-01-05 12:15:13,149 - Rotating Log - INFO - --error while processing pool--global name 'mdb' is not defined1
+2018-01-05 12:15:13,149 - Rotating Log - INFO - Exception--inserted null values for esop--1--/home/983869/Workspace1/DjangoWK/mysite/Demo/media/00AF685E0CE443DCA136174360C824DF_OX9wlEx.pdf
+2018-01-05 12:18:25,176 - Rotating Log - INFO - Downloading PDF for esop1for PDF
+2018-01-05 12:18:28,826 - Rotating Log - INFO - starting OCR PDF extraction for esop--1
+2018-01-05 12:18:28,988 - Rotating Log - INFO - starting attachment prediction for esop 1
+2018-01-05 12:18:28,989 - Rotating Log - INFO - starting jurisdiction prediction for esop 1
+2018-01-05 12:18:28,989 - Rotating Log - INFO - starting lawsuit prediction for esop 1
+2018-01-05 12:18:28,993 - Rotating Log - INFO - starting case number prediction 1
+2018-01-05 12:18:29,501 - Rotating Log - INFO - sent result from attachment 1
+2018-01-05 12:18:29,507 - Rotating Log - INFO - sent result from jurisdiction(case 2)1
+2018-01-05 12:18:29,882 - Rotating Log - INFO - sent result from lawsuit 1
+2018-01-05 12:18:30,816 - Rotating Log - INFO - sent result from casenumber 1
+2018-01-05 12:18:30,940 - Rotating Log - INFO - started from pltfdftd 1
+2018-01-05 12:18:31,074 - Rotating Log - INFO - exception from pltfdftd [Errno 2] No such file or directory: '/home/983869/Workspace1/DjangoWK/mysite/Demo/Models/county_list.txt'1
+2018-01-05 12:18:31,074 - Rotating Log - INFO - --error while processing pool--global name 'mdb' is not defined1
+2018-01-05 12:18:31,074 - Rotating Log - INFO - Exception--inserted null values for esop--1--/home/983869/Workspace1/DjangoWK/mysite/Demo/media/00AF685E0CE443DCA136174360C824DF_vrRKkl7.pdf
+2018-01-05 12:20:52,078 - Rotating Log - INFO - Downloading PDF for esop1for PDF
+2018-01-05 12:20:55,811 - Rotating Log - INFO - starting OCR PDF extraction for esop--1
+2018-01-05 12:20:55,988 - Rotating Log - INFO - starting attachment prediction for esop 1
+2018-01-05 12:20:55,988 - Rotating Log - INFO - starting jurisdiction prediction for esop 1
+2018-01-05 12:20:55,988 - Rotating Log - INFO - starting lawsuit prediction for esop 1
+2018-01-05 12:20:56,003 - Rotating Log - INFO - starting case number prediction 1
+2018-01-05 12:20:56,483 - Rotating Log - INFO - sent result from attachment 1
+2018-01-05 12:20:56,897 - Rotating Log - INFO - sent result from lawsuit 1
+2018-01-05 12:20:57,095 - Rotating Log - INFO - sent result from jurisdiction(case 2)1
+2018-01-05 12:20:58,611 - Rotating Log - INFO - sent result from casenumber 1
+2018-01-05 12:20:58,739 - Rotating Log - INFO - started from pltfdftd 1
+2018-01-05 12:20:59,278 - Rotating Log - INFO - exception from pltfdftd [Errno 2] No such file or directory: '/home/983869/Workspace1/DjangoWK/mysite/Demo/Models/county_list.txt'1
+2018-01-05 12:20:59,278 - Rotating Log - INFO - --error while processing pool--global name 'mdb' is not defined1
+2018-01-05 12:20:59,278 - Rotating Log - INFO - Exception--inserted null values for esop--1--/home/983869/Workspace1/DjangoWK/mysite/Demo/media/00AF685E0CE443DCA136174360C824DF_j5oDQmp.pdf
+2018-01-05 12:45:30,991 - Rotating Log - INFO - Downloading PDF for esop1for PDF
+2018-01-05 12:45:34,759 - Rotating Log - INFO - starting OCR PDF extraction for esop--1
+2018-01-05 12:45:34,938 - Rotating Log - INFO - starting jurisdiction prediction for esop 1
+2018-01-05 12:45:34,939 - Rotating Log - INFO - starting lawsuit prediction for esop 1
+2018-01-05 12:45:34,941 - Rotating Log - INFO - starting attachment prediction for esop 1
+2018-01-05 12:45:34,943 - Rotating Log - INFO - starting case number prediction 1
+2018-01-05 12:45:35,381 - Rotating Log - INFO - sent result from attachment 1
+2018-01-05 12:45:35,425 - Rotating Log - INFO - sent result from jurisdiction(case 2)1
+2018-01-05 12:45:35,831 - Rotating Log - INFO - sent result from lawsuit 1
+2018-01-05 12:45:36,780 - Rotating Log - INFO - sent result from casenumber 1
+2018-01-05 12:45:36,913 - Rotating Log - INFO - started from pltfdftd 1
+2018-01-05 12:45:38,548 - Rotating Log - INFO - before final_defendant == None1
+2018-01-05 12:45:39,808 - Rotating Log - INFO - before final_defendant == None1
+2018-01-05 12:45:40,141 - Rotating Log - INFO - before final_defendant == None1
+2018-01-05 12:45:40,868 - Rotating Log - INFO - sent result from pltfdftd 1
